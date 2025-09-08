@@ -1,0 +1,184 @@
+body {
+  background-color: rgb(247, 248, 250); /* Fondo general suave */
+  font-family: sans-serif; /* Tipografía sin serifas */
+}
+
+h1 {
+  font-size: 38px; /* Tamaño grande para el título principal */
+}
+
+/* 
+   HEADER
+    */
+header {
+  display: flex;
+  flex-direction: column;   /* Apila logo, subtítulo y nav uno debajo de otro */
+  align-items: center;      /* Centra horizontalmente los elementos */
+  text-align: center;       /* Centra el texto */
+  padding: 20px;
+  background-color: #f5f5f5; /* Fondo claro para diferenciar el header */
+}
+
+/* 
+   NAV (BARRA DE BOTONES)
+    */
+.nav-buttons {
+  display: flex;
+  justify-content: space-between; /* Menú a la izquierda, buscador al centro, carrito a la derecha */
+  align-items: center;
+  width: 100%;
+  max-width: 900px;   /* Limita el ancho máximo */
+  padding: 10px 20px;
+  margin-top: 15px;
+  background-color: #222; /* Fondo oscuro */
+}
+
+.nav-buttons button {
+  font-size: 28px; /* Tamaño de íconos/texto */
+  padding: 12px 18px; /* Espaciado para hacerlo más grande y clickeable */
+  border: none;
+  background: transparent;
+  color: white; /* Íconos en blanco */
+  cursor: pointer;
+  transition: transform 0.2s ease; /* Animación suave en hover */
+}
+
+.nav-buttons button:hover {
+  transform: scale(1.2); /* Efecto de agrandarse */
+  color: #ff9800;        /* Cambia a naranja al pasar el mouse */
+}
+nav {
+  display: flex;                 /* Coloca elementos en línea */
+  justify-content: space-between; /* Menú izq - buscador centro - carrito der */
+  align-items: center;
+  width: 100%;
+  max-width: 900px;              /* Ancho máximo */
+  margin-top: 15px;
+  gap: 1rem;
+}
+
+/* BARRA DE BÚSQUEDA */
+nav .search-bar {
+  flex-grow: 1;                  /* Ocupar el espacio disponible */
+  display: flex;
+  justify-content: center;       /* Centra dentro del nav */
+}
+
+nav .search-bar input {
+  width: 70%;                    /* Ajusta el ancho */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 20px 0 0 20px;
+  outline: none;
+}
+
+nav .search-bar button {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-left: none;
+  background: #007bff;
+  color: white;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+}
+
+nav .search-bar button:hover {
+  background: #0056b3;
+}
+
+/* BOTONES (menú y carrito) */
+nav .menu-btn {
+  font-size: 28px;   
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+nav .menu-btn:hover {
+  transform: scale(1.2);
+  color: #ff9800;
+}
+
+/* 
+   BARRA DE BÚSQUEDA
+    */
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px 0 0 20px; /* Bordes redondeados a la izquierda */
+  outline: none; /* Quita el borde azul al hacer foco */
+}
+
+.search-bar button {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-left: none; /* Elimina borde doble entre input y botón */
+  background: #007bff; /* Azul */
+  color: white;
+  border-radius: 0 20px 20px 0; /* Bordes redondeados a la derecha */
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background: #0056b3; /* Azul más oscuro en hover */
+}
+
+/* 
+   SECCIÓN DE CATEGORÍAS
+   */
+.categorias {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas iguales */
+  gap: 20px; /* Separación entre artículos */
+  max-width: 1000px; /* Evita que se extiendan mucho */
+  margin: 0 auto; /* Centra la sección en la página */
+  padding: 20px;
+}
+
+.categorias article {
+  background: #f9f9f9; /* Fondo gris claro */
+  border: 1px solid #ddd; /* Borde tenue */
+  border-radius: 8px; /* Bordes redondeados */
+  padding: 15px;
+  text-align: center; /* Centra contenido dentro de la tarjeta */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* Sombra sutil */
+}
+
+/*
+   FOOTER
+    */
+footer {
+  background-color: #222; 
+  color: white;
+  padding: 20px;
+  font-size: 16px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between; /* Redes a la izq, dirección a la der */
+  align-items: center;
+  flex-wrap: wrap; /* Si no cabe en pantallas pequeñas, baja a otra fila */
+  margin-bottom: 10px;
+}
+
+.social a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #ff9800; /* Color naranja */
+  font-weight: bold;
+}
+
+.social a:hover {
+  text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+.address p {
+  margin: 0; /* Quita márgenes extra */
+}
