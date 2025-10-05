@@ -5,40 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="./output.css" rel="stylesheet">
   <link rel="stylesheet" href="./diseño.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
   <title>TechNova</title>
 </head>
-<body>
-  <header id="header-content" class="flex justify-center relative">
-
-    <div id="header-video" class="absolute top-0 left-0 object-cover overflow-hidden">
-      <video src="./3129595-uhd_3840_2160_30fps.mp4" autoplay loop muted></video>
-    </div>
-
-    <div id="header-overlay" class="absolute top-0 left-0 "></div>
-    
-
-    <div class="flex justify-center items-center gap-x-0  mt-10 relative" id="encabezado">
+<body class="relative">
+  
+  <div id="header-video" class="fixed top-0 left-0 w-full h-full z-0">
+      <video src="./3129595-uhd_3840_2160_30fps.mp4" class="w-full h-full object-cover" autoplay loop muted></video>
+  </div>
+  
+  <div id="header-overlay" class="fixed top-0 left-0 w-full h-full z-10"></div>
+  
+<!-- Header -->
+  <header id="header-content" class="fixed top-0 left-0 w-full z-20">
+    <div class="flex justify-center items-center gap-x-0 mt-10" id="encabezado">
       <div>
         <img src="LOGO-_2_-_1_.svg" alt="Imagen logo" width="150px">
       </div>
-
       <div id="text_Logo" class="flex flex-col justify-center text-left">
-        <h1 id="textologo"> TECHNOVA <br> Empresa tecnológica</h1>
-        <p id="eslogan" >Innovación que impulsa tu futuro </p>
+        <h1 id="textologo">TECHNOVA <br> Empresa tecnológica</h1>
+        <p id="eslogan">Innovación que impulsa tu futuro</p>
       </div>
     </div>
   </header> 
 
-  <main>
-    <div>
-
+  <!-- Main-->
+  <main id="main-content" class="fixed top-44 left-0 flex w-full justify-center  z-30">
+    <div id="BUSCADOR" class="flex justify-start">
+      <form action="" method="post" class="flex">
+        <input type="text" id="buscador_p" name="productos_disponibles" class="" placeholder="Buscar producto...">
+        <button id="boton" class=" text-white  text-2xl gap-2 px-4 py-2 flex" > <i class="fa fa-search animate-pulse"></i></button>
+      </form>
     </div>
 
   </main>
-  
-  
-  
+
 
 </body>
 </html>
+
