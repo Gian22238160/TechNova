@@ -28,7 +28,7 @@ body{
     font-weight: bold;
 }
 
-img{
+#lg{
     filter: brightness(0) invert(1);
 }
 
@@ -53,6 +53,15 @@ img{
     padding: 10px;
     border: 0;
     outline: none;
+}
+
+#compuylaptos{
+    border: none;
+    padding: 20px;
+    background-color: rgba(97, 36, 155, 0.603);
+    border-radius: 20px;
+    width: 250px;
+    height: 350px;
 }
 
 
