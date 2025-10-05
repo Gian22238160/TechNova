@@ -34,19 +34,25 @@ img{
 
 
 #BUSCADOR {
+    #BUSCADOR {
     border-radius: 40px;
-    background:white;
-    width: 600px;
+    background: white;
+    width: 100%; 
+    max-width: 500px; 
     height: 40px;  
+    overflow: hidden;
+}
+    
 }
 
 #buscador_p{
+    border-radius: 40px;
+    background: white;
     width: 600px;
+    height: 40px;  
     padding: 10px;
-    border:0;
+    border: 0;
     outline: none;
 }
 
-.fa fa-search{
-    color: black;
-}
+
