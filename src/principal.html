@@ -22,7 +22,7 @@
   <header id="header-content" class="fixed top-0 left-0 w-full z-20">
     <div class="flex justify-center items-center gap-x-0 mt-10" id="encabezado">
       <div>
-        <img src="LOGO-_2_-_1_.svg" alt="Imagen logo" width="150px">
+        <img id="lg" src="LOGO-_2_-_1_.svg" alt="Imagen logo" width="150px">
       </div>
       <div id="text_Logo" class="flex flex-col justify-center text-left">
         <h1 id="textologo">TECHNOVA <br> Empresa tecnológica</h1>
@@ -32,9 +32,9 @@
   </header> 
 
   <!-- Main-->
-  <main id="main-content" class="fixed top-44 left-0 flex w-full justify-center  z-30">
+  <main id="main-content" class="relative z-30 mt-40 flex flex-col items-center w-full px-4 ">
     <!-- BARRA -->
-    <div id="BUSCADOR" class="flex justify-start">
+    <div id="BUSCADOR" class="flex justify-start bottom-20">
 
       <form action="" method="post" class="flex items-center gap-6">
 
@@ -54,9 +54,34 @@
           <span id="textc" class="text-lg md:font-bold ">Carrito</span>
           <div id="cant_productos" class="justify-center text-white flex items-center md:font-bold text-lg">0</div></button>
       </form>
+      
     </div>
 
     <!-- CONTENEDOR -->
+    <div id="categorias_disponibles" class=" block justify-center items-center top-0 left-0 w-3 ">
+      <section id="compuylaptos" class="flex flex-col items-center justify-centert text-center mt-8">
+        <div>
+          
+          <img src="Adobe Express - file.png" alt="laptop" width="170px" class="block mx-auto">
+          <h1 id="c1" class="text-white justify-center md:font-bold text-lg">Computadoras y Laptos</h1>
+          <p id="textc1" class="text-center text-white mx-auto">Equipos de alto rendimiento diseñados para trabajo, estudio y entretenimiento combinando potencia y portabilidad</p>
+        </div>
+
+      </section>
+
+      <section id="Accesorios_perifericos" class="flex items-center">
+
+      </section>
+
+      <section id="almacenamiento" class="items-center">
+
+      </section>
+
+      <section id="componentesPC" class="items-center">
+
+      </section>
+
+    </div>
 
   </main>
 
