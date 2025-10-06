@@ -4,8 +4,9 @@
 }
 
 body{
-    margin: 0;
     line-height: 1.5;
+    min-height: 100vh;
+    margin: 0;
     color: #333;
 }
 
@@ -16,7 +17,14 @@ body{
 
 #header-content{
     color: aliceblue;
-    height: auto;
+}
+
+#encabezado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 30px 0;
 }
 
 #eslogan {
@@ -34,7 +42,7 @@ body{
 
 #BARRA_SUPERIOR{
     width: 900px;
-    height: 50px;
+    margin-bottom: 40px;
 }
 
 #BUSCADOR{
@@ -72,6 +80,8 @@ body{
     padding: 8px 0;
     font-size: 1rem;
     width: 100%;
+    border: none;
+    outline: none;
 }
 
 
@@ -94,7 +104,23 @@ body{
     transition: color 1s ease;
 }
 
+.espaciador{
+    margin-bottom: 30px;
+    
+}
 
+.cat{
+    display: flex;
+    width:160px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: blueviolet;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
-
+#pie_pagina{
+    min-height: 200px;
+}
 
