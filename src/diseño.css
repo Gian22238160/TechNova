@@ -13,6 +13,7 @@ body{
 
 #header-overlay{
     background: rgba(138,136,146,0.25);
+    pointer-events: none;
 }
 
 #header-content{
@@ -118,9 +119,101 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
+    
 }
+
+
+
 
 #pie_pagina{
     min-height: 200px;
+    padding-bottom: 5px;
+    width: 100%;
+}
+
+#contenido{
+    margin-top: 20px;
+    margin: 20px;
+}
+
+#contactos{
+    margin-top: 20px;
+    margin-bottom: none;
+}
+
+.separador{
+    background-color: white;
+    height: 3px;
+    width: 100%;
+    margin: 5px 0;
+}
+
+
+
+#contactos .flex{
+    margin-left: auto;
+    gap: 4px;
+    padding: 5px 0;
+}
+
+#banana{
+    padding: 10px;
+}
+AYUDA
+
+
+.icono{
+    color: white;
+    display: flex;
+    width: 150px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 2px solid white;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin: 4px;
+    padding: 5px 0;
+    padding: 2px 0;
+}
+
+.iconol{
+    color: white;
+    display: flex;
+    width: 200px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 2px solid white;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin: 4px;
+    padding: 5px 0;
+    padding: 2px 0;
+}
+
+
+#icono:hover{
+    color: black;
+    background-color: white;
+}
+
+#LR{
+    width: 200px;
+    height: 40px;
+    border: 2px solid white;
+    margin-top: 10px;
+    font-style: bold;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.fa-solid{
+    font-size: 50px;
+}
+
+.location{
+    font-size: 20px;
+    margin-top: 6px;
 }
 

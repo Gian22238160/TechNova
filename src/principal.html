@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="./output.css" rel="stylesheet">
+
   <link rel="stylesheet" href="./diseño.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -19,7 +19,7 @@
   <div id="header-overlay" class="fixed top-0 left-0 w-full h-full z-10 "></div>
   
 <!-- Header -->
-  <header id="header-content" class="fixed top-16 left-0 w-full z-20 py-3">
+  <header id="header-content" class="relative top-16 left-0 w-full z-20 py-3">
     <div class="flex justify-center items-center gap-x-0" id="encabezado">
       <div>
         <img id="lg" src="LOGO-_2_-_1_.svg" alt="Imagen logo" width="150px">
@@ -31,8 +31,9 @@
     </div>
   </header>
 
+
   <!-- Main-->
-  <main id="main-content" class="relative z-30 mt-40 flex flex-col items-center flex-1">
+  <main id="main-content" class="relative z-30 mt-20 flex flex-col items-center flex-1">
     <!-- BARRA -->
     <div id="BARRA_SUPERIOR" class="flex justify-center items-center gap-20 mb-10">
 
@@ -95,11 +96,81 @@
     </div>
   </main>
 
-  <footer id="pie_pagina" class="relative z-40 bg-black text-white flex flex-col justify-center items-center w-full mt-auto">
-    <div class="text-center space-y-6">
-      <p class="text-2xl font-bold mb-4"></p> Contáctanos</p>
-      <p class="text-lg font-semibold"><p>Número telefónico: 666-666-666</p>
-      <p class="text-gray-300 mt-4">© 2024 TechNova - Innovación que impulsa tu futuro</p>
+  <footer id="pie_pagina" class="relative z-40 bg-black text-white flex flex-col justify-between items-center" >
+
+    <div id="contenido" class="relative z-40 bg-black text-white flex flex-row justify-between items-start gap-10 p-6">
+
+      
+
+      <div class="info-pie flex flex-col">
+        <p class="text-lg font-bold mb-4">AYUDA</p>
+        <p>Politica de Privacidad <br> 
+          Política de reembolso <br> 
+          Términos de Servicio
+        </p>
+      </div>
+
+      <div class="info-pie flex flex-col">
+        <p class="text-lg font-bold mb-4">SOBRE NOSOTROS</p>
+        <p>Mision, valores y objetivos <br> 
+          Métodos de pago <br> 
+          bBlog personal
+        </p>
+      </div>
+
+      <div>
+        <p>HORARIO DE ATENCION</p>
+        <p>Lunes a viernes: 8:00 am - 7:00 pm <br>
+        Sábado: 9:00 am - 2:00 pm</p>
+
+        <i class="location fa-solid fa-location-dot"></i>
+          <span>Av. Javier Prado Este 1234</span>
+      </div>
+
+      <div class="info-pie flex flex-col">
+        <p class="text-lg font-bold mb-4"> CONTACTANOS</p>
+        <p class="text-left font-semibold">666-666-666 <br> technova.pe@gmail.com</p>
+      </div>
+
+      <div class="flex flex-col justify-center items-center ml-auto">
+        <i class="fa-solid fa-book-open"></i>
+        <div id="LR" class="flex text-center justify-center items-center">
+          <p class="text-center">LIBRO DE RECLAMACIONES</p>
+          
+
+        </div>
+        
+      </div>
+
+
+    
+    </div>
+
+  
+
+    
+
+    <div class="separador"></div>
+
+    <div id="contactos" class="relative flex items-center justify-between w-full">
+      <p id="banana">© 2025 TechNova - Innovación que impulsa tu futuro</p>
+
+      <div class="flex items-center ml-auto"> 
+        <div class="icono flex items-center justify-center gap-2">
+          <i class="fa-brands fa-facebook-f"></i>
+        <span>TECHNOVA</span>
+        </div>
+
+        <div class=" icono flex items-center justify-center gap-2"> 
+          <i class="fa-brands fa-instagram"></i>
+          <span>TECHNOVA.PE</span>
+        </div>
+
+        <div class="iconol flex items-center justify-center gap-2">
+          <i class="fa-brands fa-tiktok"></i>
+          <span>TECHNOVA.OFICIAL</span>
+        </div>
+      </div>
     </div>
 </footer>
 
