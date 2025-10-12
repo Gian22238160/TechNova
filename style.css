@@ -1,0 +1,107 @@
+/* === CONTACTO === */
+
+.header-contacto {
+  background: linear-gradient(to right, #0a3d62, #1e6fa9);
+  color: #fff;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.activo {
+  color: #ffd32a;
+}
+
+.banner-contacto h1 {
+  margin-top: 1rem;
+  font-size: 2.5rem;
+}
+
+.contenedor-contacto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 3rem auto;
+  padding: 0 20px;
+}
+
+.info-contacto, .mapa-contacto {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  padding: 2rem;
+}
+
+.info-contacto h2, .mapa-contacto h2 {
+  color: #0a3d62;
+  margin-bottom: 1rem;
+}
+
+.info-contacto p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.redes-sociales {
+  margin-top: 1rem;
+}
+
+.red {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 8px 15px;
+  border-radius: 20px;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.red.facebook { background-color: #1877f2; }
+.red.instagram { background-color: #e1306c; }
+.red.linkedin { background-color: #0077b5; }
+
+.red:hover { opacity: 0.8; }
+
+.footer {
+  text-align: center;
+  background-color: #0a3d62;
+  color: #fff;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .contenedor-contacto {
+    grid-template-columns: 1fr;
+  }
+}

@@ -5,23 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contacto | TechNova</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="img/logo.png">
 </head>
 <body>
-  <header>
-    <h1>Contáctanos</h1>
-    <p>Estamos aquí para ayudarte a impulsar tu futuro tecnológico.</p>
+  <header class="header-contacto">
+    <nav class="navbar">
+      <a href="index.html" class="logo">TechNova</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="contact.html" class="activo">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="banner-contacto">
+      <h1>Contáctanos</h1>
+      <p>Estamos aquí para ayudarte a impulsar tu futuro tecnológico.</p>
+    </div>
   </header>
 
-  <section class="contact-info">
-    <h2>Información de contacto</h2>
-    <ul>
-      <li><strong>Dirección:</strong> Av. Javier Prado Este 1234, San Borja, Lima, Perú</li>
-      <li><strong>Teléfono:</strong> +51 987 654 321</li>
-      <li><strong>Correo electrónico:</strong> contacto@technova.com.pe</li>
-    </ul>
-  </section>
+  <main class="contenedor-contacto">
+    <section class="info-contacto">
+      <h2>Información de contacto</h2>
+      <p><strong>Dirección:</strong> Av. Javier Prado Este 1234, San Borja, Lima, Perú</p>
+      <p><strong>Teléfono:</strong> +51 987 654 321</p>
+      <p><strong>Correo:</strong> contacto@technova.com.pe</p>
+      <div class="redes-sociales">
+        <a href="#" class="red facebook">Facebook</a>
+        <a href="#" class="red instagram">Instagram</a>
+        <a href="#" class="red linkedin">LinkedIn</a>
+      </div>
+    </section>
 
-  <footer>
+    <section class="mapa-contacto">
+      <h2>Encuéntranos aquí</h2>
+      <iframe 
+        src="https://www.google.com/maps?q=Av.%20Javier%20Prado%20Este%201234%2C%20San%20Borja%2C%20Lima&output=embed"
+        width="100%" height="300" style="border:0;" allowfullscreen loading="lazy">
+      </iframe>
+    </section>
+  </main>
+
+  <footer class="footer">
     <p>© 2025 TechNova. Innovación que impulsa tu futuro.</p>
   </footer>
 </body>
