@@ -146,7 +146,7 @@
     position: absolute;
     align-items: center;
 
-    top: 54%; 
+    top: 55%; 
     left: 50%;
     
     transform: translate(-50%, -50%);
@@ -186,14 +186,15 @@
 */
 
 .categorias{
+    position: relative;
+    z-index: 10;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 70px;
     flex-wrap: wrap;
-    margin-top: 570px;
+    margin-top: 60vh;
     text-align: center;
-
 }
 
 .cat{
