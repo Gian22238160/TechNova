@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta Gráfica NVIDIA RTX 4060 | TechNova</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <!-- fuente y librerías -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- CSS general -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- CSS adicional solo si el detalle tiene estilos únicos -->
+    <link rel="stylesheet" href="detalleproducto.css">
+</head>
+
+<body>
+    <header id="header-content">
+        <div class="encabezado">
+            <img id="lg" src="LOGO-_2_-_1_.svg" alt="Imagen logo">
+            <div id="text_Logo">
+                <h1 id="textologo">TECHNOVA</h1>
+                <p id="eslogan">Innovación que impulsa tu futuro</p>
+            </div>
+        </div>
+    </header>
+
+    <!--BARRA SUPERIOR-->
+    <div id="BARRA_SUPERIOR">
+        <button id="menu">
+            <i class="fa fa-bars"></i>
+            <span>Menú</span>
+        </button>
+
+        <!--BUSCADOR-->
+        <div id="BUSCADOR">
+            <form action="" method="post">
+                <input type="text" id="buscador_p" name="productos_disponibles" placeholder="Buscar producto...">
+                <button id="boton"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+
+        <button id="carrito" class="carrito">
+            <i class="fa fa-shopping-cart"></i>
+            <span>Carrito</span>
+            <div id="cant_productos" class="contador">0</div>
+        </button>
+    </div>
+
+    <!--DETALLE DEL PRODUCTO - MAIN -->
+    <main class="detalle-producto">
+        <section class="info-producto">
+            <!-- Imagen del producto -->
+            <div class="imagen-producto">
+                <img src="img/rtx_4060.jpg" alt="Tarjeta Gráfica NVIDIA RTX 4060">
+            </div>
+
+            <!-- Datos del producto -->
+            <div class="datos-producto">
+                <h1>Tarjeta Gráfica NVIDIA RTX 4060</h1>
+                <p class="descripcion">
+                    8GB GDDR6, soporte DLSS 3, ray tracing y 4K gaming.
+                </p>
+                <p class="precio">s/1799.00</p>
+
+                <!--Contador de cantidad-->
+                <div class="cantidad">
+                    <button id="menos">-</button>
+                    <span id="numero">1</span>
+                    <button id="mas">+</button>
+                </div>
+
+                <!--Botón principal-->
+                <button class="btn-carrito">Añadir al carrito</button>
+
+                <!--Medios de pago-->
+                <div class="medios-pago">
+                    <p class="titulo-pago">Medios de pago disponibles:</p>
+                    <div class="logos-pago">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-amex"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                    </div>
+                </div>
+
+                <!--Opciones de envío-->
+                <div class="opciones-envio">
+                    <h3><i class="fas fa-shipping-fast"></i> Opciones de envío</h3>
+                    <div class="opcion-envio">
+                        <p><strong>Envío estándar:</strong> 3-5 días hábiles - Gratis</p>
+                    </div>
+                    <div class="opcion-envio">
+                        <p><strong>Envío express:</strong> 1-2 días hábiles - s/15.00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Tabs: descripción, especificaciones, garantía, contacto-->
+        <section class="tabs-container">
+            <div class="tabs-header">
+                <button class="tab-btn active" data-tab="descripcion">Descripción</button>
+                <button class="tab-btn" data-tab="especificaciones">Especificaciones</button>
+                <button class="tab-btn" data-tab="garantia">Garantía</button>
+                <button class="tab-btn" data-tab="contacto">Contacto</button>
+            </div>
+
+            <div class="tabs-content">
+                <!-- DESCRIPCIÓN -->
+                <div class="tab-panel active" id="descripcion">
+                    <h2>Descripción del producto</h2>
+                    <p>
+                        La <strong>NVIDIA GeForce RTX 4060</strong> ofrece un rendimiento sobresaliente para gamers y creadores. 
+                        Basada en la arquitectura <strong>Ada Lovelace</strong>, brinda un salto de eficiencia, potencia gráfica y realismo visual.
+                    </p>
+                    <p>
+                        Con <strong>8GB de memoria GDDR6</strong> y soporte para tecnologías de última generación como 
+                        <strong>DLSS 3</strong> y <strong>ray tracing</strong>, podrás disfrutar de tus juegos en alta resolución 
+                        y tasas de cuadros fluidas.
+                    </p>
+                </div>
+
+                <!-- ESPECIFICACIONES -->
+                <div class="tab-panel" id="especificaciones">
+                    <h2>Especificaciones técnicas</h2>
+                    <ul>
+                        <li><strong>GPU:</strong> NVIDIA GeForce RTX 4060</li>
+                        <li><strong>Arquitectura:</strong> Ada Lovelace</li>
+                        <li><strong>Memoria:</strong> 8GB GDDR6</li>
+                        <li><strong>Interfaz de memoria:</strong> 128-bit</li>
+                        <li><strong>Frecuencia base:</strong> 1830 MHz</li>
+                        <li><strong>Frecuencia boost:</strong> 2460 MHz</li>
+                        <li><strong>Tecnologías:</strong> DLSS 3, Ray Tracing, NVIDIA Reflex</li>
+                        <li><strong>Consumo máximo:</strong> 115W</li>
+                        <li><strong>Conectores de video:</strong> HDMI 2.1, DisplayPort 1.4a</li>
+                        <li><strong>Requiere fuente:</strong> 550W recomendada</li>
+                        <li><strong>Compatibilidad:</strong> PCIe 4.0 x8</li>
+                    </ul>
+                </div>
+
+                <!-- GARANTÍA -->
+                <div class="tab-panel" id="garantia">
+                    <h2>Garantía</h2>
+                    <p><strong>Garantía del fabricante:</strong> 2 años</p>
+                    <p>
+                        Todos nuestros productos cuentan con garantía oficial del fabricante. Si se detecta un defecto de fábrica, 
+                        se reemplaza el producto sin costo adicional.
+                    </p>
+                    <h3>Condiciones de garantía:</h3>
+                    <ul>
+                        <li>Producto sin daños físicos o manipulación indebida</li>
+                        <li>Debe conservar el empaque y accesorios originales</li>
+                        <li>Presentar comprobante de compra</li>
+                        <li>No cubre daños por sobrevoltaje o instalación incorrecta</li>
+                    </ul>
+                </div>
+
+                <!-- CONTACTO -->
+                <div class="tab-panel" id="contacto">
+                    <h2>Contacto</h2>
+                    <p>¿Tienes dudas sobre este producto? Contáctanos:</p>
+                    <div class="info-contacto">
+                        <p><i class="fas fa-phone"></i> <strong>Teléfono:</strong> 666-666-666</p>
+                        <p><i class="fas fa-envelope"></i> <strong>Email:</strong> ventas@technova.com</p>
+                        <p><i class="fab fa-whatsapp"></i> <strong>WhatsApp:</strong> +51 666-666-666</p>
+                        <p><i class="fas fa-clock"></i> <strong>Horario:</strong> Lun-Vie 9:00 AM - 6:00 PM</p>
+                    </div>
+                    <div class="btn-contacto-container">
+                        <a href="contact.html" class="btn-contacto">Ver detalles de contacto</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer id="pie_pagina">
+        <div class="footer-content">
+            <p class="titulo">Contáctanos</p>
+            <p class="telefono">Número telefónico: 666-666-666</p>
+            <p class="copyright">© 2025 TechNova - Innovación que impulsa tu futuro</p>
+        </div>
+    </footer>
+
+    <script src="tabs.js"></script>
+</body>
+</html>

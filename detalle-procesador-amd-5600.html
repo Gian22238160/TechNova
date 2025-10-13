@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procesador AMD Ryzen 5 5600 | TechNova</title>
+  <link rel="icon" href="favicon.png" type="image/png">
+    <!-- fuente y librerías -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <!-- CSS general -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- CSS adicional solo si el detalle tiene estilos únicos -->
+   <link rel="stylesheet" href="detalleproducto.css">
+</head>
+<body>
+  <header id="header-content">
+    <div class="encabezado">
+      <img id="lg" src="LOGO-_2_-_1_.svg" alt="Imagen logo">
+      <div id="text_Logo">
+        <h1 id="textologo">TECHNOVA</h1>
+        <p id="eslogan">Innovación que impulsa tu futuro</p>
+      </div>
+    </div>
+  </header>
+  <!--BARRA SUPERIOR-->
+  <div id="BARRA_SUPERIOR">
+    <button id="menu">
+      <i class="fa fa-bars"></i>
+      <span>Menú</span>
+    </button>
+  <!--BUSCADOR-->
+    <div id="BUSCADOR">
+      <form action="" method="post">
+        <input type="text" id="buscador_p" name="productos_disponibles" placeholder="Buscar producto...">
+        <button id="boton"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+
+    <button id="carrito" class="carrito">
+      <i class="fa fa-shopping-cart"></i>
+      <span>Carrito</span>
+      <div id="cant_productos" class="contador">0</div>
+    </button>
+  </div>
+
+  <!--DETALLE DEL PRODUCTO - MAIN -->
+
+  <main class="detalle-producto">
+  <!-- Sección principal: imagen + datos -->
+  <section class="info-producto">
+    <!-- Imagen del producto -->
+    <div class="imagen-producto">
+      <img src="img/cpu_ryzen5.jpg" alt="Procesador Ryzen 5 5600">
+    </div>
+
+    <!-- Datos del producto -->
+    <div class="datos-producto">
+      <h1>Procesador AMD Ryzen 5 5600</h1>
+      <p class="descripcion">
+        6 núcleos, 12 hilos, frecuencia base de 3.5 GHz. Ideal para gaming y trabajo.
+      </p>
+      <p class="precio">s/312.00</p>
+
+       <!--Contador de cantidad--> 
+      <div class="cantidad">
+        <button id="menos">-</button>
+        <span id="numero">1</span>
+        <button id="mas">+</button>
+      </div>
+
+      <!--Botón principal-->  
+      <button class="btn-carrito">Añadir al carrito</button>
+
+       <!--Agregando sección de medios de pago--> 
+      <div class="medios-pago">
+        <p class="titulo-pago">Medios de pago disponibles:</p>
+        <div class="logos-pago">
+          <i class="fab fa-cc-visa"></i>
+          <i class="fab fa-cc-mastercard"></i>
+          <i class="fab fa-cc-amex"></i>
+          <i class="fab fa-cc-paypal"></i>
+        </div>
+      </div>
+
+       <!--Agregando opciones de envío--> 
+      <div class="opciones-envio">
+        <h3><i class="fas fa-shipping-fast"></i> Opciones de envío</h3>
+        <div class="opcion-envio">
+          <p><strong>Envío estándar:</strong> 3-5 días hábiles - Gratis</p>
+        </div>
+        <div class="opcion-envio">
+          <p><strong>Envío express:</strong> 1-2 días hábiles - s/15.00</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!--Reemplazando sección de detalles con tabs--> 
+  <section class="tabs-container">
+    <div class="tabs-header">
+      <button class="tab-btn active" data-tab="descripcion">Descripción</button>
+      <button class="tab-btn" data-tab="especificaciones">Especificaciones</button>
+      <button class="tab-btn" data-tab="garantia">Garantía</button>
+      <button class="tab-btn" data-tab="contacto">Contacto</button>
+    </div>
+
+    <div class="tabs-content">
+      <div class="tab-panel active" id="descripcion">
+        <h2>Descripción del producto</h2>
+        <p>El procesador AMD Ryzen 5 5600 es una excelente opción para gaming y productividad. Con arquitectura Zen 3, ofrece un rendimiento excepcional en aplicaciones multihilo y juegos modernos.</p>
+        <p>Perfecto para construir tu PC gaming o estación de trabajo, este procesador te brinda la potencia necesaria para ejecutar las aplicaciones más exigentes sin comprometer el rendimiento.</p>
+      </div>
+
+      <div class="tab-panel" id="especificaciones">
+        <h2>Especificaciones técnicas</h2>
+        <ul>
+          <li><strong>Núcleos:</strong> 6</li>
+          <li><strong>Hilos:</strong> 12</li>
+          <li><strong>Frecuencia base:</strong> 3.5 GHz</li>
+          <li><strong>Frecuencia máxima:</strong> 4.4 GHz</li>
+          <li><strong>Socket:</strong> AM4</li>
+          <li><strong>TDP:</strong> 65W</li>
+          <li><strong>Caché L3:</strong> 32MB</li>
+          <li><strong>Incluye:</strong> Disipador Wraith Stealth</li>
+        </ul>
+      </div>
+
+      <div class="tab-panel" id="garantia">
+        <h2>Garantía</h2>
+        <p><strong>Garantía del fabricante:</strong> 1 año</p>
+        <p>Todos nuestros productos cuentan con garantía oficial del fabricante. En caso de defecto de fábrica, realizamos el cambio sin costo adicional.</p>
+        <h3>Condiciones de garantía:</h3>
+        <ul>
+          <li>Producto sin daños físicos evidentes</li>
+          <li>Conservar empaque original y accesorios</li>
+          <li>Presentar comprobante de compra</li>
+          <li>No aplica para daños por mal uso o instalación incorrecta</li>
+        </ul>
+      </div>
+
+      <div class="tab-panel" id="contacto">
+        <h2>Contacto</h2>
+        <p>¿Tienes dudas sobre este producto? Contáctanos:</p>
+        <div class="info-contacto">
+          <p><i class="fas fa-phone"></i> <strong>Teléfono:</strong> 666-666-666</p>
+          <p><i class="fas fa-envelope"></i> <strong>Email:</strong> ventas@technova.com</p>
+          <p><i class="fab fa-whatsapp"></i> <strong>WhatsApp:</strong> +51 666-666-666</p>
+          <p><i class="fas fa-clock"></i> <strong>Horario:</strong> Lun-Vie 9:00 AM - 6:00 PM</p>
+        </div>
+        <!-- NUEVO BOTÓN DE ENLACE -->
+        <div class="btn-contacto-container">
+        <a href="contact.html" class="btn-contacto">Ver detalles de contacto</a></div>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <!--INICIO DE FOOTER-->
+
+  <footer id="pie_pagina">
+    <div class="footer-content">
+      <p class="titulo">Contáctanos</p>
+      <p class="telefono">Número telefónico: 666-666-666</p>
+      <p class="copyright">© 2025 TechNova - Innovación que impulsa tu futuro</p>
+    </div>
+  </footer>
+<script src="tabs.js"></script>
+    
+</body>
+</html>

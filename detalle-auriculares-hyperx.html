@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auriculares HyperX Cloud II | TechNova</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <!-- fuente y librerías -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- CSS general -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- CSS adicional solo si el detalle tiene estilos únicos -->
+    <link rel="stylesheet" href="detalleproducto.css">
+</head>
+
+<body>
+    <header id="header-content">
+        <div class="encabezado">
+            <img id="lg" src="LOGO-_2_-_1_.svg" alt="Imagen logo">
+            <div id="text_Logo">
+                <h1 id="textologo">TECHNOVA</h1>
+                <p id="eslogan">Innovación que impulsa tu futuro</p>
+            </div>
+        </div>
+    </header>
+
+    <!--BARRA SUPERIOR-->
+    <div id="BARRA_SUPERIOR">
+        <button id="menu">
+            <i class="fa fa-bars"></i>
+            <span>Menú</span>
+        </button>
+
+        <!--BUSCADOR-->
+        <div id="BUSCADOR">
+            <form action="" method="post">
+                <input type="text" id="buscador_p" name="productos_disponibles" placeholder="Buscar producto...">
+                <button id="boton"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+
+        <button id="carrito" class="carrito">
+            <i class="fa fa-shopping-cart"></i>
+            <span>Carrito</span>
+            <div id="cant_productos" class="contador">0</div>
+        </button>
+    </div>
+
+    <!--DETALLE DEL PRODUCTO - MAIN -->
+    <main class="detalle-producto">
+        <section class="info-producto">
+            <!-- Imagen del producto -->
+            <div class="imagen-producto">
+                <img src="img/audifonos.JPG" alt="Auriculares HyperX Cloud II">
+            </div>
+
+            <!-- Datos del producto -->
+            <div class="datos-producto">
+                <h1>Auriculares HyperX Cloud II</h1>
+                <p class="descripcion">
+                    Sonido envolvente 7.1, micrófono desmontable, alta comodidad.
+                </p>
+                <p class="precio">s/349.00</p>
+
+                <!--Contador de cantidad-->
+                <div class="cantidad">
+                    <button id="menos">-</button>
+                    <span id="numero">1</span>
+                    <button id="mas">+</button>
+                </div>
+
+                <!--Botón principal-->
+                <button class="btn-carrito">Añadir al carrito</button>
+
+                <!--Medios de pago-->
+                <div class="medios-pago">
+                    <p class="titulo-pago">Medios de pago disponibles:</p>
+                    <div class="logos-pago">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-amex"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                    </div>
+                </div>
+
+                <!--Opciones de envío-->
+                <div class="opciones-envio">
+                    <h3><i class="fas fa-shipping-fast"></i> Opciones de envío</h3>
+                    <div class="opcion-envio">
+                        <p><strong>Envío estándar:</strong> 3-5 días hábiles - Gratis</p>
+                    </div>
+                    <div class="opcion-envio">
+                        <p><strong>Envío express:</strong> 1-2 días hábiles - s/15.00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Tabs: descripción, especificaciones, garantía, contacto-->
+        <section class="tabs-container">
+            <div class="tabs-header">
+                <button class="tab-btn active" data-tab="descripcion">Descripción</button>
+                <button class="tab-btn" data-tab="especificaciones">Especificaciones</button>
+                <button class="tab-btn" data-tab="garantia">Garantía</button>
+                <button class="tab-btn" data-tab="contacto">Contacto</button>
+            </div>
+
+            <div class="tabs-content">
+                <!-- DESCRIPCIÓN -->
+                <div class="tab-panel active" id="descripcion">
+                    <h2>Descripción del producto</h2>
+                    <p>
+                        Los <strong>Auriculares HyperX Cloud II</strong> ofrecen una experiencia de sonido envolvente <strong>7.1 virtual</strong>, 
+                        diseñados para ofrecer máxima comodidad y calidad de audio profesional durante largas sesiones de juego o trabajo.
+                    </p>
+                    <p>
+                        Su <strong>micrófono desmontable con cancelación de ruido</strong> y sus almohadillas de espuma viscoelástica 
+                        brindan una experiencia inmersiva y confortable. Perfectos para gamers, streamers y profesionales que buscan 
+                        un sonido claro, potente y equilibrado.
+                    </p>
+                </div>
+
+                <!-- ESPECIFICACIONES -->
+                <div class="tab-panel" id="especificaciones">
+                    <h2>Especificaciones técnicas</h2>
+                    <ul>
+                        <li><strong>Tipo:</strong> Over-ear (circumaural)</li>
+                        <li><strong>Sonido:</strong> Envolvente 7.1 virtual</li>
+                        <li><strong>Conectividad:</strong> USB y Jack 3.5 mm</li>
+                        <li><strong>Micrófono:</strong> Desmontable con cancelación de ruido</li>
+                        <li><strong>Compatibilidad:</strong> PC, PS4, PS5, Xbox, Nintendo Switch</li>
+                        <li><strong>Material:</strong> Estructura de aluminio con almohadillas de espuma viscoelástica</li>
+                        <li><strong>Longitud del cable:</strong> 1.0 m (extensible a 2.0 m con adaptador)</li>
+                        <li><strong>Peso:</strong> 320 g</li>
+                    </ul>
+                </div>
+
+                <!-- GARANTÍA -->
+                <div class="tab-panel" id="garantia">
+                    <h2>Garantía</h2>
+                    <p><strong>Garantía del fabricante:</strong> 2 años</p>
+                    <p>
+                        Todos nuestros productos HyperX cuentan con garantía oficial. En caso de fallas de fábrica, 
+                        se realiza el reemplazo sin costo adicional dentro del periodo establecido.
+                    </p>
+                    <h3>Condiciones de garantía:</h3>
+                    <ul>
+                        <li>Producto sin señales de manipulación o humedad</li>
+                        <li>Debe conservar el empaque y accesorios originales</li>
+                        <li>Presentar comprobante de compra</li>
+                        <li>No cubre daños por uso indebido o golpes</li>
+                    </ul>
+                </div>
+
+                <!-- CONTACTO -->
+                <div class="tab-panel" id="contacto">
+                    <h2>Contacto</h2>
+                    <p>¿Tienes dudas sobre este producto? Contáctanos:</p>
+                    <div class="info-contacto">
+                        <p><i class="fas fa-phone"></i> <strong>Teléfono:</strong> 666-666-666</p>
+                        <p><i class="fas fa-envelope"></i> <strong>Email:</strong> ventas@technova.com</p>
+                        <p><i class="fab fa-whatsapp"></i> <strong>WhatsApp:</strong> +51 666-666-666</p>
+                        <p><i class="fas fa-clock"></i> <strong>Horario:</strong> Lun-Vie 9:00 AM - 6:00 PM</p>
+                    </div>
+                    <div class="btn-contacto-container">
+                        <a href="contact.html" class="btn-contacto">Ver detalles de contacto</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer id="pie_pagina">
+        <div class="footer-content">
+            <p class="titulo">Contáctanos</p>
+            <p class="telefono">Número telefónico: 666-666-666</p>
+            <p class="copyright">© 2025 TechNova - Innovación que impulsa tu futuro</p>
+        </div>
+    </footer>
+
+    <script src="tabs.js"></script>
+</body>
+</html>

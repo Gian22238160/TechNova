@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - TechNova</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="img/LOGO-_2_-_1_.svg" alt="TechNova">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Catálogo</a></li>
+            <li><a href="carrito.html">Carrito</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        <div class="cart-icon">
+            <a href="carrito.html">
+                <img src="img/cart-icon.svg" alt="Carrito">
+            </a>
+        </div>
+    </nav>
+
+    <section class="cart">
+        <h1>Carrito de Compras</h1>
+        <div class="cart-items"></div>
+        <div class="total">
+            <span>Total: </span><span id="total-price">S/ 0.00</span>
+        </div>
+        <button id="checkout-btn" onclick="window.location.href='checkout.html'">Finalizar Compra</button>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
