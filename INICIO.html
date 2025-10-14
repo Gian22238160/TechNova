@@ -1,40 +1,140 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechNova - Inicio</title>
-    <!-- Enlazar archivos de estilo -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <!-- Barra de navegación -->
-    <nav class="navbar">
-        <div class="logo">
-            <img src="img/LOGO-_2_-_1_.svg" alt="TechNova">
-        </div>
-        <ul class="nav-links">
-            <li><a href="INICIO.html">Inicio</a></li>
-            <li><a href="productos.html">Catálogo</a></li>
-            <li><a href="carrito.html">Carrito</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-        <div class="cart-icon">
-            <a href="carrito.html">
-                <img src="img/cart-icon.svg" alt="Carrito">
-            </a>
-        </div>
-    </nav>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Technova</title>
+        <link href="./output.css" rel="stylesheet">
+        <link rel="stylesheet" href="DISEÑO_I.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-    <!-- Contenido de la página de inicio -->
-    <section class="hero">
-        <h1>Bienvenido a TechNova</h1>
-        <p>Tu tienda de tecnología en línea. Encuentra los mejores productos aquí.</p>
-        <a href="productos.html" class="btn">Ver Productos</a>
-    </section>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap" rel="stylesheet">
 
-    <!-- Enlazar los scripts -->
-    <script src="js/script.js"></script>
-</body>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        </style>
+        
+    </head>
+
+    <body>
+        
+
+        <main>
+            <!-- FONDO 1 --> 
+<!-- Creacion de logo --> 
+            <section class="fondoI" style="background-image: url(anas-alshanti-feXpdV001o4-unsplash.jpg) ;">
+                <div class="FORMATO-LG">
+                        <div>
+                            <img class="IMG-LOGO" src="LOGO-_2_-_1_.svg" alt="Imagen logo">
+                        </div>
+                        <div class="text_Logo" class="flex flex-col justify-center text-left">
+                            <h1 id="textologo">TECHNOVA <br> Empresa tecnológica</h1>
+                        </div>
+                </div>
+<!-- Creacion de secciones de la pagina de inicio --> 
+                <div class="secciones">
+                    <section class="shop"><i class="fa fa-shopping-cart"></i><h2> CARRITO</h2></section>
+                    <section><h2>INFORMACION</h2></section>
+                    <section><h2>OFERTAS</h2></section>
+                    <section class="login"> <i class="fa-solid fa-user"></i> <h2>INICIAR SESION </h2></section>
+                    
+
+                </div>
+
+<!-- eslogan y vinculo a informacion --> 
+                <div class="FORMATO-LOGO">
+                    <div class="NL">
+                        <h1>TECHNOVA</h1>
+                    </div>
+                    <div>
+                        <p id="eslogan">Innovación que impulsa tu futuro</p>
+                    </div>
+                </div>
+
+
+
+<!-- Creacion y modificacion de barra superior --> 
+                <div class="barra-superior">
+                    <input type="text" id="barra_info" class="barra" placeholder="Buscar producto...">
+                        <button> 
+                            <i class="i fa fa-search"></i>
+                        </button>
+                </div>
+
+
+<!-- Creacion CATEGORIAS --> 
+
+                <div class="categorias">
+                    <div class="cat">
+                        <div class="PIÑA">
+                            <img src="PRODUCTOS/pngimg.com - laptop_PNG101835.png" alt="" class="producto">
+                        </div>
+                        <h1>LAPTOS</h1>
+                        <p>7 productos</p>
+                    </div>
+
+                    <div class="cat">
+                        <div class="PIÑA">
+                            <img src="PRODUCTOS/raton-teclado-inalambricos.png" alt="" class="producto">
+                        </div>
+                        <h1>ACCESORIOS</h1>
+                        <p>10 productos</p>
+                    </div>
+
+                    <a href="../AbdulArchivos/productos.html">
+                    <div class="cat">
+                        <div class="PIÑA">
+                            <img src="PRODUCTOS/Adobe Express - file (1).png" alt="" class="producto">
+                        </div>
+                        <h1>ALMACENAMIENTO</h1>
+                        <p>5 productos</p>
+                    </div>
+                    </a>
+
+
+
+                    <div class="cat">
+                        <div class="PIÑA">
+                            <img src="PRODUCTOS/Adobe Express - file (2).png" alt="" class="producto">
+                        </div>
+
+                        <h1>COMPONENTES</h1>
+                        <p>11 productos</p>
+                    </div>
+
+                    <div class="cat">
+                        <div class="PIÑA">
+                            <img src="PRODUCTOS/ps4-slim-image-block-01-en-24jul201.webp" alt="" class="productog">
+                        </div>
+                        <h1>GAMING</h1>
+                        <p>5 productos</p>
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- Fondo 2 --> 
+        
+        </main>
+    <script src="script.js"></script>
+    </body>
 </html>
