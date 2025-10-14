@@ -3,13 +3,13 @@
 .navbar .logo img,
 .checkout .cart-items img,
 .product-item img {
-    max-height: 256px; /* Limita la altura máxima a 256px */
+    max-height: 180px; /* Cambio la altura máxima a 180px */
     width: auto; /* Mantiene la proporción original de la imagen */
 }
 
 /* Ajustes adicionales para las imágenes de los productos si es necesario */
 .product-item img {
-    max-height: 256px; /* Limita la altura de las imágenes de productos */
+    max-height: 180px; /* Cambio la altura máxima a 180px */
     width: auto;
 }
 
@@ -20,7 +20,6 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
 }
-
 
 header {
   background: linear-gradient(90deg, #0078d7, #00aaff);
@@ -49,7 +48,6 @@ header {
   font-size: 1rem;
   color: #e0e0e0;
 }
-
 
 #BARRA_SUPERIOR {
   display: flex;
@@ -119,7 +117,6 @@ header {
   font-size: 0.8rem;
 }
 
-
 .catalogo {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -144,7 +141,6 @@ header {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
 }
 
-
 .producto img {
   width: 100%;
   height: 200px;
@@ -154,7 +150,6 @@ header {
   border-radius: 10px;
   margin-bottom: 10px;
 }
-
 
 .producto h2 {
   font-size: 1.1rem;
@@ -174,7 +169,6 @@ header {
   color: #00ffaa;
   margin: 0.8rem 0;
 }
-
 
 button {
   background: linear-gradient(90deg, #0078d7, #00c6ff);
@@ -197,7 +191,6 @@ button:active {
   transform: scale(0.95);
   opacity: 0.9;
 }
-
 
 footer {
   background-color: #111;
@@ -225,7 +218,6 @@ footer .copyright {
   color: #888;
 }
 
-
 @media (max-width: 768px) {
   .catalogo {
     padding: 1rem;
@@ -241,7 +233,7 @@ footer .copyright {
   }
 }
 
-/* Animacion del Carrito */
+/* Animación del Carrito */
 .animar {
   transform: scale(1.3);
   background-color: #00ffaa;
@@ -304,4 +296,3 @@ footer .copyright {
 .cart-item span, .total {
     font-family: 'Roboto', sans-serif; /* Asegura que el contenido también use la misma fuente */
 }
-
