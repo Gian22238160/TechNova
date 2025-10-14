@@ -248,3 +248,60 @@ footer .copyright {
   color: #000;
   transition: all 0.3s ease;
 }
+
+/* Añadir espacio entre los elementos del carrito y checkout */
+.cart-item, .checkout .cart-item {
+    margin-bottom: 20px; /* Espacio entre los productos */
+    padding-bottom: 10px; /* Espacio extra al final de cada producto */
+    border-bottom: 1px solid #ddd; /* Línea para separar */
+}
+
+/* Ajustar la separación entre los diferentes productos en el carrito */
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre los elementos dentro del contenedor */
+}
+
+/* Espaciado para los formularios en checkout */
+.checkout .form-group {
+    margin-bottom: 20px; /* Separar los campos del formulario */
+}
+
+/* Ajuste para el total en el carrito y checkout */
+.total {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+/* Usar la imagen de fondo en carrito y checkout */
+.cart, .checkout {
+    background-image: url('img/anas-alshanti-feXpdV001o4-unsplash.jpg');
+    background-size: cover; /* Hace que la imagen cubra toda la sección */
+    background-position: center; /* Centra la imagen */
+    padding: 20px;
+    color: #fff; /* Asegura que el texto sea visible sobre el fondo */
+}
+
+/* Opcionalmente, se puede ajustar el color de fondo de los productos para hacerlos más legibles */
+.cart-item, .checkout .cart-item {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente para los productos */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+/* Para ajustar el texto dentro del carrito */
+.cart-item span {
+    color: #333; /* Asegura que el texto dentro del carrito sea legible */
+}
+
+/* Aplicar la fuente Roboto al encabezado y al contenido */
+.cart h1, .checkout h1 {
+    font-family: 'Roboto', sans-serif; /* Fuente para el encabezado */
+    font-weight: 500;
+    font-size: 2rem; /* Tamaño adecuado para el encabezado */
+}
+
+.cart-item span, .total {
+    font-family: 'Roboto', sans-serif; /* Asegura que el contenido también use la misma fuente */
+}
+
