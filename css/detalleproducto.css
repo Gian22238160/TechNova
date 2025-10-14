@@ -1,0 +1,325 @@
+/* =======================================================
+   ESTRUCTURA PRINCIPAL DEL DETALLE
+========================================================= */
+.detalle-producto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.info-producto {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+  background: #1c1c1e;
+  border-radius: 14px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 1000px;
+}
+
+.imagen-producto img {
+  width: 350px;
+  border-radius: 10px;
+  object-fit: contain;
+  background-color: #2a2a2d;
+}
+
+.datos-producto {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.datos-producto h1 {
+  color: #00aaff;
+  margin: 0;
+}
+
+.descripcion {
+  color: #e0e0e0;
+}
+
+.precio {
+  font-size: 1.3rem;
+  color: #00ffaa;
+  font-weight: 700;
+}
+
+.cantidad {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cantidad button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #0078d7, #00c6ff);
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;              
+  align-items: center;        /*  centra verticalmente */
+  justify-content: center;    /*  centra horizontalmente */
+}
+
+.cantidad span {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.btn-carrito {
+  background: linear-gradient(90deg, #0078d7, #00c6ff);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-carrito:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #005fa3, #00a2e8);
+}
+
+/* =======================================================
+    MEDIOS DE PAGO (CSS1)
+========================================================= */
+.medios-pago {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #2a2a2d;
+  border-radius: 8px;
+  border: 1px solid #333;
+}
+
+.titulo-pago {
+  font-size: 0.9rem;
+  color: #b0b0b0;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+
+.logos-pago {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.logos-pago i {
+  font-size: 2.5rem;
+  color: #00aaff;
+  transition: transform 0.3s ease;
+}
+
+.logos-pago i:hover {
+  transform: scale(1.1);
+  color: #00ffaa;
+}
+
+/* =======================================================
+   OPCIONES DE ENVÍO (CSS1)
+========================================================= */
+.opciones-envio {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #2a2a2d;
+  border-radius: 8px;
+  border: 1px solid #333;
+}
+
+.opciones-envio h3 {
+  color: #00aaff;
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.opcion-envio {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #333;
+}
+
+.opcion-envio:last-child {
+  border-bottom: none;
+}
+
+.opcion-envio p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #e0e0e0;
+}
+
+/* =======================================================
+   TABS DE INFORMACIÓN (DESCRIPCIÓN, FICHA, ETC.)
+   (CSS1 + mejoras visuales)
+========================================================= */
+.tabs-container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 2rem auto;
+  background: #1c1c1e;
+  border-radius: 14px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.tabs-header {
+  display: flex;
+  gap: 0.5rem;
+  border-bottom: 2px solid #333;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap; /* 📱 Mejora para pantallas pequeñas */
+}
+
+.tab-btn {
+  background: transparent;
+  color: #b0b0b0;
+  border: none;
+  border-bottom: 3px solid transparent;
+  padding: 0.8rem 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.tab-btn:hover {
+  color: #00aaff;
+  background-color: rgba(0, 170, 255, 0.1);
+}
+
+.tab-btn.active {
+  color: #00aaff;
+  border-bottom-color: #00aaff;
+}
+
+.tabs-content {
+  min-height: 200px;
+}
+
+.tab-panel {
+  display: none;
+  animation: fadeIn 0.3s ease;
+}
+
+.tab-panel.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.tab-panel h2 {
+  color: #00aaff;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.tab-panel p {
+  color: #e0e0e0;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.tab-panel ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tab-panel ul li {
+  padding: 0.5rem 0;
+  color: #e0e0e0;
+  border-bottom: 1px solid #333;
+}
+
+.tab-panel ul li:last-child {
+  border-bottom: none;
+}
+
+/* =======================================================
+    INFORMACIÓN DE CONTACTO (CSS1)
+========================================================= */
+.info-contacto {
+  background-color: #2a2a2d;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.info-contacto p {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin: 0.8rem 0;
+}
+
+.info-contacto i {
+  color: #00aaff;
+  font-size: 1.2rem;
+}
+
+/* =======================================================
+    MEDIA QUERIES (MEJORADO)
+========================================================= */
+@media (max-width: 768px) {
+  .info-producto {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imagen-producto img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .tabs-container {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  .tab-btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .logos-pago i {
+    font-size: 2rem;
+  }
+}
+/* =======================================================
+   BOTÓN "VER DETALLES DE CONTACTO" (CSS2)
+======================================================= */
+.btn-contacto-container {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.btn-contacto {
+  display: inline-block;
+  background-color: #00aaff;
+  color: #fff;
+  padding: 0.8rem 1.6rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-contacto:hover {
+  background-color: #0088cc;
+  transform: translateY(-2px);
+}
