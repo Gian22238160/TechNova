@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Componentes - TechNova</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="archivos_catalogo/css/styles.css">
+</head>
+
+<body>
+
+<header id="header-content">
+  <div class="encabezado">
+    <img id="lg" src="archivos_catalogo/img/LOGO-_2_-_1_.svg" alt="Logo">
+    <div id="text_Logo">
+      <h1 id="textologo">TECHNOVA</h1>
+      <p id="eslogan">Innovación que impulsa tu futuro</p>
+    </div>
+  </div>
+</header>
+
+<div id="BARRA_SUPERIOR">
+  <button id="menu">
+    <i class="fa fa-bars"></i>
+    <span>Menú</span>
+  </button>
+
+  <div id="BUSCADOR">
+    <form action="" method="post">
+      <input type="text" id="buscador_p" placeholder="Buscar producto...">
+      <button id="boton" type="button"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+
+  <button id="carrito">
+    <i class="fa fa-shopping-cart"></i>
+    <span>Carrito</span>
+    <div id="cant_productos" class="contador">0</div>
+  </button>
+</div>
+
+<main class="catalogo">
+
+  <div class="producto">
+    <a href="#">
+      <img src="archivos_catalogo/img/cpu_ryzen5.jpg" alt="Procesador Ryzen">
+      <h2>Procesador AMD Ryzen 5 5600</h2>
+      <p class="descripcion">6 núcleos, 12 hilos, rendimiento ideal para gaming.</p>
+      <p class="precio">s/312.00</p>
+    </a>
+    <button>Agregar al carrito</button>
+  </div>
+
+  <div class="producto">
+    <a href="#">
+      <img src="archivos_catalogo/img/placa_msi.JPG" alt="Placa MSI">
+      <h2>Placa Madre MSI B550M PRO</h2>
+      <p class="descripcion">PCIe 4.0, DDR4, AM4, excelente estabilidad.</p>
+      <p class="precio">s/499.00</p>
+    </a>
+    <button>Agregar al carrito</button>
+  </div>
+
+  <div class="producto">
+    <a href="#">
+      <img src="archivos_catalogo/img/memoria_ram.JPG" alt="RAM Corsair">
+      <h2>Memoria RAM 16GB Corsair</h2>
+      <p class="descripcion">DDR4 3200MHz, alto rendimiento multitarea.</p>
+      <p class="precio">s/299.00</p>
+    </a>
+    <button>Agregar al carrito</button>
+  </div>
+
+  <div class="producto">
+    <a href="#">
+      <img src="archivos_catalogo/img/kingston_nv2.JPG" alt="SSD NV2">
+      <h2>SSD NVMe Kingston NV2 1TB</h2>
+      <p class="descripcion">Lectura 3500MB/s, sistema ultra rápido.</p>
+      <p class="precio">s/250.00</p>
+    </a>
+    <button>Agregar al carrito</button>
+  </div>
+
+  <div class="producto">
+    <a href="#">
+      <img src="archivos_catalogo/img/fuente_evga.jpg" alt="Fuente EVGA">
+      <h2>Fuente de Poder EVGA 650W 80+ Bronze</h2>
+      <p class="descripcion">650W 80+ Bronze</p>
+      <p class="precio">s/150.00</p>
+    </a>
+    <button>Agregar al carrito</button>
+  </div>
+
+  <div class="producto">
+    <a href="#">
+      <img src="archivos_catalogo/img/grafica_4060.jpg" alt="Gráfica NVIDIA">
+      <h2>Gráfica NVIDIA RTX 4060</h2>
+      <p class="descripcion">8gb, Raytracing</p>
+      <p class="precio">s/1950.00</p>
+    </a>
+    <button>Agregar al carrito</button>
+  </div>
+
+</main>
+
+<footer id="pie_pagina">
+  <div class="footer-content">
+    <p class="titulo">Contáctanos</p>
+    <p class="telefono">Número telefónico: 666-666-666</p>
+    <p class="copyright">© 2025 TechNova - Innovación que impulsa tu futuro</p>
+  </div>
+</footer>
+
+<script src="archivos_catalogo/js/script.js"></script>
+
+</body>
+</html>
