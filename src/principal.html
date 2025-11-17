@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="./diseño.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <title>TechNova</title>
+</head>
+<body class="relative min-h-screen flex flex-col">
+  
+  <div id="header-video" class="fixed left-0 top-0 w-full h-full z-0">
+      <video src="./3129595-uhd_3840_2160_30fps.mp4" class="w-full h-full object-cover" autoplay loop muted></video>
+  </div>
+  
+  <div id="header-overlay" class="fixed top-0 left-0 w-full h-full z-10 "></div>
+  
+<!-- Header -->
+  <header id="header-content" class="relative top-16 left-0 w-full z-20 py-3">
+    <div class="flex justify-center items-center gap-x-0" id="encabezado">
+      <div>
+        <img id="lg" src="LOGO-_2_-_1_.svg" alt="Imagen logo" width="150px">
+      </div>
+      <div id="text_Logo" class="flex flex-col justify-center text-left">
+        <h1 id="textologo">TECHNOVA <br> Empresa tecnológica</h1>
+        <p id="eslogan">Innovación que impulsa tu futuro</p>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- Main-->
+  <main id="main-content" class="relative z-30 mt-20 flex flex-col items-center flex-1">
+    <!-- BARRA -->
+    <div id="BARRA_SUPERIOR" class="flex justify-center items-center gap-20 mb-10">
+
+        <button id="menu"> 
+          <i class="fa fa-bars text-2xl"></i> 
+          <span id="textm" class="text-lg md:font-bold">Menú</span>
+        </button>
+
+        <div id="BUSCADOR" class="border-none bg-white outline-none flex-1 items-center">
+          <form action="" method="post" class="flex items-center">
+            <input type="text" id="buscador_p" name="productos_disponibles" placeholder="Buscar producto...">
+            <button id="boton"> 
+              <i class="fa fa-search animate-pulse text-2xl"></i>
+            </button>
+          </form>
+        </div>
+        
+        <button id="carrito">
+          <i class="fa fa-shopping-cart animate-pulse text-2xl"></i>
+          <span id="textc" class="text-lg md:font-bold ">Carrito</span>
+          <div id="cant_productos" class="justify-center text-white flex items-center md:font-bold text-lg">0</div>
+        </button>
+    </div>
+
+    <div class="espaciador h-20 text-center items-center justify-center flex-col flex gap-3">
+      <h2 class="cat text-white md:font-bold">Categorías</h2>
+    </div>
+
+   
+    <!-- CONTENEDOR -->
+    <div id="categorias_disponibles" class=" flex justify-center items-start">
+
+      <section id="compuylaptos" class="text-center">
+        <h1 id="c1" class="text-white md:font-bold text-lg">Computadoras y Laptos</h1>
+        <img src="Adobe Express - file.png" alt="laptop" width="170px" class="block mx-auto ">
+        <p id="textc1" class=" text-white mx-auto">Equipos de alto rendimiento diseñados para trabajo, estudio y entretenimiento combinando potencia y portabilidad</p>
+      </section>
+        
+
+      <section id="Accesorios_perifericos" class=" text-center">
+        <h1 id="c2" class="text-white  md:font-bold text-lg">Accesorios y Periféricos </h1>
+        <img src="raton-teclado-inalambricos.png" alt="perifericos" width="300" class="block mx-auto mt-8">
+        <p class="text-white mx-auto">Dispositivos que mejoran la experiencia tecnológica, como teclados, mouse, audífonos, monitores y más</p>
+      </section>
+
+      <section id="almacenamiento" class="text-center">
+        <h1 id="c3" class="text-white md:font-bold text-lg">Almacenamiento</h1>
+        <img src="Adobe Express - file (1).png" alt="almacenamiento" width="300" class="block mx-auto mt-4">
+        <p class="text-white mx-auto">Piezas esenciales como procesadores, tarjetas gráficas, memorias RAM y fuentes de poder para armar o mejorar tu computadora.</p>
+
+      </section>
+
+      <section id="componentesPC" class="text-center">
+        <h1 id="c4" class="text-white md:font-bold text-lg">Componentes de PC</h1>
+        <img src="Adobe Express - file (2).png" alt="componente" width="170" class="block mx-auto mt-1">
+        <p class="text-white mx-auto">Soluciones seguras y rápidas para guardar información, desde discos duros y SSD hasta memorias USB y tarjetas SD.</p>
+
+      </section>
+
+    </div>
+  </main>
+
+  <footer id="pie_pagina" class="relative z-40 bg-black text-white flex flex-col justify-between items-center" >
+
+    <div id="contenido" class="relative z-40 bg-black text-white flex flex-row justify-between items-start gap-10 p-6">
+
+      
+
+      <div class="info-pie flex flex-col">
+        <p class="text-lg font-bold mb-4">AYUDA</p>
+        <p>Politica de Privacidad <br> 
+          Política de reembolso <br> 
+          Términos de Servicio
+        </p>
+      </div>
+
+      <div class="info-pie flex flex-col">
+        <p class="text-lg font-bold mb-4">SOBRE NOSOTROS</p>
+        <p>Mision, valores y objetivos <br> 
+          Métodos de pago <br> 
+          bBlog personal
+        </p>
+      </div>
+
+      <div>
+        <p>HORARIO DE ATENCION</p>
+        <p>Lunes a viernes: 8:00 am - 7:00 pm <br>
+        Sábado: 9:00 am - 2:00 pm</p>
+
+        <i class="location fa-solid fa-location-dot"></i>
+          <span>Av. Javier Prado Este 1234</span>
+      </div>
+
+      <div class="info-pie flex flex-col">
+        <p class="text-lg font-bold mb-4"> CONTACTANOS</p>
+        <p class="text-left font-semibold">666-666-666 <br> technova.pe@gmail.com</p>
+      </div>
+
+      <div class="flex flex-col justify-center items-center ml-auto">
+        <i class="fa-solid fa-book-open"></i>
+        <div id="LR" class="flex text-center justify-center items-center">
+          <p class="text-center">LIBRO DE RECLAMACIONES</p>
+          
+
+        </div>
+        
+      </div>
+
+
+    
+    </div>
+
+  
+
+    
+
+    <div class="separador"></div>
+
+    <div id="contactos" class="relative flex items-center justify-between w-full">
+      <p id="banana">© 2025 TechNova - Innovación que impulsa tu futuro</p>
+
+      <div class="flex items-center ml-auto"> 
+        <div class="icono flex items-center justify-center gap-2">
+          <i class="fa-brands fa-facebook-f"></i>
+        <span>TECHNOVA</span>
+        </div>
+
+        <div class=" icono flex items-center justify-center gap-2"> 
+          <i class="fa-brands fa-instagram"></i>
+          <span>TECHNOVA.PE</span>
+        </div>
+
+        <div class="iconol flex items-center justify-center gap-2">
+          <i class="fa-brands fa-tiktok"></i>
+          <span>TECHNOVA.OFICIAL</span>
+        </div>
+      </div>
+    </div>
+</footer>
+
+</body>
+</html>
+
