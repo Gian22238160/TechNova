@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disco SSD Kingston NV2 1TB NVMe | TechNova</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <!-- fuente y librerías -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- CSS general -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- CSS adicional solo si el detalle tiene estilos únicos -->
+    <link rel="stylesheet" href="detalleproducto.css">
+</head>
+
+<body>
+    <header id="header-content">
+        <div class="encabezado">
+            <img id="lg" src="LOGO-_2_-_1_.svg" alt="Imagen logo">
+            <div id="text_Logo">
+                <h1 id="textologo">TECHNOVA</h1>
+                <p id="eslogan">Innovación que impulsa tu futuro</p>
+            </div>
+        </div>
+    </header>
+    <!--BARRA SUPERIOR-->
+    <div id="BARRA_SUPERIOR">
+        <button id="menu">
+            <i class="fa fa-bars"></i>
+            <span>Menú</span>
+        </button>
+        <!--BUSCADOR-->
+        <div id="BUSCADOR">
+            <form action="" method="post">
+                <input type="text" id="buscador_p" name="productos_disponibles" placeholder="Buscar producto...">
+                <button id="boton"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+
+        <button id="carrito" class="carrito">
+            <i class="fa fa-shopping-cart"></i>
+            <span>Carrito</span>
+            <div id="cant_productos" class="contador">0</div>
+        </button>
+    </div>
+
+    <!--DETALLE DEL PRODUCTO - MAIN -->
+
+    <main class="detalle-producto">
+        <!-- Sección principal: imagen + datos -->
+        <section class="info-producto">
+            <!-- Imagen del producto -->
+            <div class="imagen-producto">
+                <img src="img/kingston_nv2.JPG" alt="SSD 1TB">
+            </div>
+
+            <!-- Datos del producto -->
+            <div class="datos-producto">
+                <h1>Disco SSD Kingston NV2 1TB NVMe</h1>
+                <p class="descripcion">
+                    Velocidad de lectura hasta 3500MB/s. Arranque ultrarrápido.
+                </p>
+                <p class="precio">s/250.00</p>
+
+                <!--Contador de cantidad-->
+                <div class="cantidad">
+                    <button id="menos">-</button>
+                    <span id="numero">1</span>
+                    <button id="mas">+</button>
+                </div>
+
+                <!--Botón principal-->
+                <button class="btn-carrito">Añadir al carrito</button>
+
+                <!--Agregando sección de medios de pago-->
+                <div class="medios-pago">
+                    <p class="titulo-pago">Medios de pago disponibles:</p>
+                    <div class="logos-pago">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-amex"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                    </div>
+                </div>
+
+                <!--Agregando opciones de envío-->
+                <div class="opciones-envio">
+                    <h3><i class="fas fa-shipping-fast"></i> Opciones de envío</h3>
+                    <div class="opcion-envio">
+                        <p><strong>Envío estándar:</strong> 3-5 días hábiles - Gratis</p>
+                    </div>
+                    <div class="opcion-envio">
+                        <p><strong>Envío express:</strong> 1-2 días hábiles - s/15.00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Reemplazando sección de detalles con tabs-->
+        <section class="tabs-container">
+            <div class="tabs-header">
+                <button class="tab-btn active" data-tab="descripcion">Descripción</button>
+                <button class="tab-btn" data-tab="especificaciones">Especificaciones</button>
+                <button class="tab-btn" data-tab="garantia">Garantía</button>
+                <button class="tab-btn" data-tab="contacto">Contacto</button>
+            </div>
+
+            <div class="tabs-content">
+                <!-- 💽 DESCRIPCIÓN -->
+                <div class="tab-panel active" id="descripcion">
+                    <h2>Descripción del producto</h2>
+                    <p>
+                        El <strong>Disco SSD Kingston NV2 1TB NVMe</strong> ofrece un rendimiento superior
+                        para equipos modernos gracias a su interfaz PCIe 4.0 NVMe. Su diseño compacto y
+                        eficiente lo convierte en una excelente opción para computadoras portátiles, de escritorio
+                        y sistemas de alto rendimiento.
+                    </p>
+                    <p>
+                        Con velocidades de lectura de hasta <strong>3500 MB/s</strong>, permite un
+                        <strong>arranque ultrarrápido</strong>, una carga ágil de aplicaciones y una
+                        transferencia fluida de archivos pesados, mejorando significativamente la experiencia del
+                        usuario.
+                    </p>
+                </div>
+
+                <!-- ⚙️ ESPECIFICACIONES -->
+                <div class="tab-panel" id="especificaciones">
+                    <h2>Especificaciones técnicas</h2>
+                    <ul>
+                        <li><strong>Capacidad:</strong> 1TB</li>
+                        <li><strong>Interfaz:</strong> PCIe 4.0 NVMe</li>
+                        <li><strong>Formato:</strong> M.2 2280</li>
+                        <li><strong>Velocidad de lectura:</strong> hasta 3500 MB/s</li>
+                        <li><strong>Velocidad de escritura:</strong> hasta 2100 MB/s</li>
+                        <li><strong>Consumo energético:</strong> Bajo consumo en operación y reposo</li>
+                        <li><strong>Compatibilidad:</strong> Placas base con ranura M.2 NVMe</li>
+                        <li><strong>Temperatura de funcionamiento:</strong> 0°C a 70°C</li>
+                        <li><strong>Dimensiones:</strong> 22 x 80 x 2.2 mm</li>
+                        <li><strong>Peso:</strong> 7 gramos</li>
+                        <li><strong>Garantía:</strong> 3 años limitada del fabricante</li>
+                    </ul>
+                </div>
+
+                <div class="tab-panel" id="garantia">
+                    <h2>Garantía</h2>
+                    <p><strong>Garantía del fabricante:</strong> 1 año</p>
+                    <p>Todos nuestros productos cuentan con garantía oficial del fabricante. En caso de defecto de
+                        fábrica,
+                        realizamos el cambio sin costo adicional.</p>
+                    <h3>Condiciones de garantía:</h3>
+                    <ul>
+                        <li>Producto sin daños físicos evidentes</li>
+                        <li>Conservar empaque original y accesorios</li>
+                        <li>Presentar comprobante de compra</li>
+                        <li>No aplica para daños por mal uso o instalación incorrecta</li>
+                    </ul>
+                </div>
+
+                <div class="tab-panel" id="contacto">
+                    <h2>Contacto</h2>
+                    <p>¿Tienes dudas sobre este producto? Contáctanos:</p>
+                    <div class="info-contacto">
+                        <p><i class="fas fa-phone"></i> <strong>Teléfono:</strong> 666-666-666</p>
+                        <p><i class="fas fa-envelope"></i> <strong>Email:</strong> ventas@technova.com</p>
+                        <p><i class="fab fa-whatsapp"></i> <strong>WhatsApp:</strong> +51 666-666-666</p>
+                        <p><i class="fas fa-clock"></i> <strong>Horario:</strong> Lun-Vie 9:00 AM - 6:00 PM</p>
+                    </div>
+                    <!-- NUEVO BOTÓN DE ENLACE -->
+                    <div class="btn-contacto-container">
+                        <a href="contacto.html" class="btn-contacto">Ver detalles de contacto</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--INICIO DE FOOTER-->
+
+    <footer id="pie_pagina">
+        <div class="footer-content">
+            <p class="titulo">Contáctanos</p>
+            <p class="telefono">Número telefónico: 666-666-666</p>
+            <p class="copyright">© 2025 TechNova - Innovación que impulsa tu futuro</p>
+        </div>
+    </footer>
+    <script src="tabs.js"></script>
+
+</body>
+
+</html>
